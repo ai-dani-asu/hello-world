@@ -1,12 +1,13 @@
 /*****
- * Edit this line to have your name.
+ * Aira Daniella San Agustin
  ******/
 public class GitDemo {
     
     private double previousNumber;
+    private double reverseNum;
     
     public GitDemo() {
-        previousNumber = 1;
+        previousNumber = 1;      
     }
     
     /*****
@@ -14,7 +15,8 @@ public class GitDemo {
     *****/
     public double addNumber(double num) {
         System.out.print("Add num to previousNumber");
-        return 0;
+        double sum = previousNumber + num; //add private GitDemo number and parameter
+        return sum;
     }
     
     /*****
@@ -27,8 +29,7 @@ public class GitDemo {
         
         for(int i = 1; i <= num; ++i){
             newNumber = newNumber * i;
-        }
-        
+        }        
         return newNumber;
     }
     
@@ -37,15 +38,15 @@ public class GitDemo {
      * i.e. if num = 1234
      *  the function will return 4321
      *****/
-    public double reverseNumber(int num){
-        double reverseNumber = 0;
-        
+    public double reverseNumber(int num){        
+        reverseNum = 0;
         while( num != 0 ) {
             double temp = num % 10;
-            reverseNumber = reverseNumber * 10 + temp;
+            reverseNum = reverseNum * 10 + temp;
             num /= 10;
         }        
-        return reverseNumber;
+        return reverseNum;
+
     }
     
 }
